@@ -15,6 +15,9 @@ This project use mongoose(http://mongoosejs.com/) to access MongoDB from Node ap
 
 I also use mongoose-paginate(https://www.npmjs.com/package/mongoose-paginate) to perform pagination query. This plugin is amazing!
 
+The project not focus to manage front-end dependencies like bower. However, this SPA (https://en.wikipedia.org/wiki/Single-page_application) project use CDN to import bootstrap, jquery and vuejs.
+Feel free to improve and apply an better approach for front-end architecture.
+
 ## Prerequistes
 
 1 - Install Node.js and update npm (https://docs.npmjs.com/getting-started/installing-node)
