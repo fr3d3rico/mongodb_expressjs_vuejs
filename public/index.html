@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+
+		<div id="app" class="container">
+			<div class="header clearfix">
+				<nav>
+					<ul class="nav nav-pills pull-right">
+						<li role="presentation" class="active"><a href="#">Home</a></li>
+						<li role="presentation"><a href="#">About</a></li>
+						<li role="presentation"><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<h3 class="text-muted">MongoDB + ExpressJS + VueJS</h3>
+			</div>
+
+			<div class="jumbotron">
+				<h1>Powered by Bootstrap</h1>
+				<div class="input-group">
+					<input class="form-control" name="_id" placeholder="Id" v-model="doc._id" disabled />
+				</div>
+				<div class="input-group">
+					<input class="form-control" name="name" placeholder="Name" v-model="doc.name" />
+				</div>
+				<div class="btn-group">
+					<button class="btn btn-primary" v-on:click="newDoc">New</button>
+					<button class="btn btn-primary" v-on:click="addOrUpdate">Add or Update</button>
+					<button class="btn btn-primary" v-on:click="list">List</button>
+				</div>
+			</div>
+
+			<div class="row marketing">
+				<div v-for="doc in docs" class="col-lg-2">
+					<p>{{doc.name}}</p>
+					<button class="btn btn-warning" v-on:click="find(doc._id)">Edit</button>
+					<button class="btn btn-danger" v-on:click="remove(doc._id)">Remove</button>
+				</div>
+			</div>
+
+			<nav aria-label="...">
+				<ul class="pager">
+					<li class="previous"><a href="#" v-on:click="navigationBack"><span aria-hidden="true">&larr;</span> Older</a></li>
+					<li class="next"><a href="#" v-on:click="navigationForward">Newer <span aria-hidden="true">&rarr;</span></a></li>
+				</ul>
+			</nav>
+
+		</div>
+		<script src="javascripts/documentApp.js"></script>
+
+    	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>

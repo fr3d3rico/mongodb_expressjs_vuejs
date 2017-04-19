@@ -1,0 +1,30 @@
+{
+  "name": "mongodb-expressjs-vuejs-app",
+  "version": "1.0.0",
+  "description": "Test app to apply MongoDB + ExpressJS + VueJS",
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "expressjs",
+    "node",
+    "vuejs",
+    "spa"
+  ],
+  "private": true,
+  "author": "@fr3d3rico",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "mongoose": "^4.9.4",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  }
+}
