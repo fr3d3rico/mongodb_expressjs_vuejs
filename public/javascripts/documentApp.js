@@ -110,7 +110,7 @@ var app = new Vue({
   			console.error(error); 
   		});
   	},
-  	list: function(page = 1) {
+  	list: function(page = parseInt(1)) {
   		fetch('http://localhost:3000/docs/list/'+page)
   		.then((response) => response.json())
   		.then((responseJson) => { 
