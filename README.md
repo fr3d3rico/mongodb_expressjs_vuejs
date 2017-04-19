@@ -1,4 +1,4 @@
-# mongodb_expressjs_vuejs
+# MongoDB + ExpressJS + VueJS
 Test app to apply MongoDB + ExpressJS + VueJS.
 
 This project focus on use of the follow stack: 
