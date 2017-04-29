@@ -16,7 +16,7 @@
   "scripts": {
     "test": "No script defined!",
 
-    "dev": "nodemon ./bin/www" ,
+    "dev": "nodemon ./bin/www",
 
     "start": "node ./bin/www"
   },
