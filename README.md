@@ -1,7 +1,7 @@
 # MongoDB + ExpressJS + VueJS
 Test app to apply MongoDB + ExpressJS + VueJS.
 
-This project focus on use of the follow stack: 
+This project focus on use of the follow stack:
 
 MongoDB (https://docs.mongodb.com/)
 
@@ -31,3 +31,7 @@ Go to root directory and run: npm install
 After that, run: npm start
 
 This command will execute www file. If you want change it, please go to package.json and change "scripts" ;)
+
+## Next
+
+Next step in this project is apply webpack. ;)
