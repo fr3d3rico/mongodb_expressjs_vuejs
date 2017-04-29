@@ -14,6 +14,8 @@
   "author": "@fr3d3rico",
   "license": "MIT",
   "scripts": {
+    "test": "No script defined!",
+
     "dev": "nodemon ./bin/www",
 
     "start": "node ./bin/www"
